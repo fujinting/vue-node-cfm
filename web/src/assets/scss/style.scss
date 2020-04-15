@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;     //防止左右滑动
+    outline: none;              //不高亮
+}
+html{
+    font-size: 14px;            //基本字体
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Microsoft Yahei;
+    line-height:1.5067rem;
+    background-color: #1a1a1a;
+    font-size: 1.0045rem;
+
+}
+
+a{
+    color: #E0E0E1;
+
+}
+
+
+
+//colors
+$colors:(
+    'white':#fff,
+    'red':#ff0000,
+    'grey': #736F6D,
+    'grey-1':#E0E0E1,
+    'grey-2':#C1C0C0,
+    'grey-3':#393736,
+    'grey-4':#2f2e2c,
+    'grey-5':#cfcfcf,
+    'grey-6':#868686,
+    'black':#000,
+    'black-1':#151515,
+    'black-2':#2f2d2c,
+    'black-3':#1a1a1a,
+    'drak':#0E0E0E,
+
+);
+@each $colorKey,$color in $colors {
+    .text-#{$colorKey}{
+        color: $color;
+    }
+
+    .bg-#{$colorKey}{
+        background-color: $color;
+    }
+
+}
+
+
+
+// text align
+@each $var in (left,center,right) {
+    .text-#{$var}{      
+        text-align: $var !important;
+    }
+}
+
+
+
+
+
+// font size
+
+$base-font-size:1rem;
+$font-sizes:(
+     
+    xxs:0.5859,     //8.20313px
+    xs:0.7534,      //10.5496px
+    sm:0.8371,      //11.7188px
+    md:1.0045,      //14.0625px
+    lg:1.0463,      //14.6484px
+    xl:1.2556       //17.5781px
+
+
+  );
+
+
+@each $sizeKey, $size in $font-sizes {
+    .fs-#{$sizeKey} {
+      font-size: $size * $base-font-size;
+    }
+  }
+
+// flex
+
+.d-flex{
+    display: flex;      //弹性盒子
+}
+.flex-column{
+    flex-direction: column;    //纵向排布
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+$flex-jc:(
+
+    start: flex-start,
+    end: flex-end,
+    center:center,
+    between:space-between,
+    around:space-around
+
+);
+
+@each $key,$value in $flex-jc{
+    .jc-#{$key}{
+        justify-content: $value;
+    }
+}
+
+$flex-ai:(
+
+    start: flex-start,
+    end: flex-end,
+    center:center,
+    stretch:stretch
+
+);
+
+@each $key,$value in $flex-ai{
+    .ai-#{$key}{
+        align-items: $value;
+    }
+}
+
+.flex-1{
+    flex: 1;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+// spacing
+// 0-5
+$spacing-types:(
+    m:margin,
+    p:padding
+);
+$spacing-directions:(
+    t:top,
+    r:right,
+    b:bottom,
+    l:left
+);
+$spacing-base-size:1rem;
+$spacing-sizes:(
+    0:0,
+    1:0.25,
+    2:0.5,
+    3:1,
+    4:2,
+    5:3,
+    6:4
+);
+
+
+
+// m-0, mx-0
+@each $typeKey, $type in $spacing-types {
+    // .m-1
+    @each $sizeKey, $size in $spacing-sizes {
+      .#{$typeKey}-#{$sizeKey} {
+        #{$type}: $size * $spacing-base-size;
+      }
+    }
+    // .mx-1 , .my-1
+    @each $sizeKey, $size in $spacing-sizes {
+      .#{$typeKey}x-#{$sizeKey} {
+        #{$type}-left: $size * $spacing-base-size;
+        #{$type}-right: $size * $spacing-base-size ;
+      }
+      .#{$typeKey}y-#{$sizeKey} {
+        #{$type}-top: $size * $spacing-base-size !important;
+        #{$type}-bottom: $size * $spacing-base-size !important;
+      }
+    }
+    // .mt-1
+    @each $directionKey, $direction in $spacing-directions {
+      @each $sizeKey, $size in $spacing-sizes {
+        .#{$typeKey}#{$directionKey}-#{$sizeKey} {
+          #{$type}-#{$direction}: $size * $spacing-base-size !important;
+        }
+      }
+    }
+  }
+
+
+  .w-100 {
+    width: 100%;
+  }
+  .h-100 {
+    height: 100%;
+  }
+  .w-25{
+    width: 25%;
+  }
+
+
+
+.bb-grey{
+  border-bottom: 1px solid rgb(51, 50, 50);
+}
+.bx-grey{
+  border-left: 1px solid rgb(51, 50, 50);
+  border-right: 1px solid rgb(51, 50, 50);
+}
+
+.by-grey{
+
+  border-bottom: 1px solid rgb(51, 50, 50);
+  border-top: 1px solid rgb(51, 50, 50);
+
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+

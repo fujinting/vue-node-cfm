@@ -1,0 +1,187 @@
+.main_clearfix {
+    height: 5.5rem;
+  
+    // 精灵图
+    .cricle {
+      background: url("../assets/img/index_sprite.png") no-repeat 0 0;
+      width: 101px;
+      height: 101px;
+      transform: scale(0.6);
+      margin-top: -15px;
+      margin-left: -15px;
+      display: block;
+      padding-top: 1.4286rem;
+    }
+    .gun {
+      background: url("../assets/img/index_sprite.png") no-repeat 26.316% 0;
+      width: 40px;
+      height: 29px;
+      margin-left: 32px;
+    }
+    .activity {
+      background: url("../assets/img/index_sprite.png") no-repeat 39.272% 0;
+      width: 31px;
+      height: 31px;
+      margin-left: 35px;
+    }
+    .community {
+      background: url("../assets/img/index_sprite.png") no-repeat 52.282% 0;
+      width: 33px;
+      height: 32px;
+      margin-left: 34px;
+      transform: scale(1.1);
+  
+    }
+    .cdkey {
+      background: url("../assets/img/index_sprite.png") no-repeat 65.104% 0;
+      width: 32px;
+      height: 32px;
+      margin-left: 35px;
+    }
+    .mall {
+      background: url("../assets/img/index_sprite.png") no-repeat 78.182% 0;
+      width: 30px;
+      height: 31px;
+      margin-left: 35px;
+    }
+  }
+  
+  .main_news {
+    height: 16.0714rem;
+  
+    .main_news_title {
+      .vertical {
+        background: url("../assets/img/index_sprite.png") no-repeat 62.893%
+          25.806%;
+        width: 5px;
+        height: 25px;
+        transform: scale(0.7);
+        float: left;
+      }
+    }
+    .main_news_item {
+      height: 2.5rem;
+    }
+  }
+  
+  .main_videos {
+    height: 37rem;
+  
+    .main_videos_title {
+      .vertical {
+        background: url("../assets/img/index_sprite.png") no-repeat 62.893%
+          25.806%;
+        width: 5px;
+        height: 25px;
+        transform: scale(0.7);
+        float: left;
+      }
+    }
+  }
+  
+  .main_strategies {
+    height: 34.5rem;
+  
+    .main_strategies_title {
+      .vertical {
+        background: url("../assets/img/index_sprite.png") no-repeat 62.893%
+          25.806%;
+        width: 5px;
+        height: 25px;
+        transform: scale(0.7);
+        float: left;
+      }
+    }
+  }
+  
+  .main_firehomes {
+    height: 20rem;
+  
+    .main_firehomes_title {
+      .vertical {
+        background: url("../assets/img/index_sprite.png") no-repeat 62.893%
+          25.806%;
+        width: 5px;
+        height: 25px;
+        transform: scale(0.7);
+        float: left;
+      }
+    }
+  }
+  
+  .fire_item {
+    height: 4.8143rem;
+  }
+  
+  // 精灵图
+  .community {
+    background: url("../assets/img/index_sprite.png") no-repeat -1px -600px;
+    width: 75px;
+    height: 75px;
+    transform: scale(0.6);
+  }
+  .tribe {
+    background: url("../assets/img/index_sprite.png") no-repeat -200px -600px;
+    width: 75px;
+    height: 75px;
+    transform: scale(0.6);
+  }
+  .official {
+    background: url("../assets/img/index_sprite.png") no-repeat -401px -600px;
+    width: 75px;
+    height: 75px;
+    transform: scale(0.6);
+  }
+  
+  .main_partners {
+    height: 15.8571rem;
+  
+    .main_partners_title {
+      .vertical {
+        background: url("../assets/img/index_sprite.png") no-repeat 62.893%
+          25.806%;
+        width: 5px;
+        height: 25px;
+        transform: scale(0.7);
+        float: left;
+      }
+    }
+  }
+  
+  // 精灵图
+  .penguin {
+    background: url("../assets/img/logo-sp.png") no-repeat 0 96.038%;
+    width: 132px;
+    height: 38px;
+    transform: scale(0.7);
+  }
+  .fish {
+    background: url("../assets/img/logo-sp.png") no-repeat 50% 32.676%;
+    width: 126px;
+    height: 33px;
+    transform: scale(0.7);
+  }
+  .inter {
+    background: url("../assets/img/logo-sp.png") no-repeat 53.333% 40.256%;
+    width: 72px;
+    height: 48px;
+    transform: scale(0.7);
+  }
+  .tentacles {
+    background: url("../assets/img/logo-sp.png") no-repeat 50% 56.245%;
+    width: 126px;
+    height: 60px;
+    transform: scale(0.7);
+  }
+  .tiger {
+    background: url("../assets/img/logo-sp.png") no-repeat 50% 72.108%;
+    width: 126px;
+    height: 60px;
+    transform: scale(0.7);
+  }
+  .forum {
+    background: url("../assets/img/logo-sp.png") no-repeat 50% 1.107%;
+    width: 116px;
+    height: 50px;
+    transform: scale(0.9);
+  }
