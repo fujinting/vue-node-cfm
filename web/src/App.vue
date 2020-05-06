@@ -46,9 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  height: 135rem;
-}
+
 .topbar {
   position: sticky;
   top: 0;

@@ -4,6 +4,9 @@ import VueRouter from 'vue-router'
 import Main from '../views/Main.vue'
 import Login from '../views/Login.vue'
 
+// 进入时的页面
+import HomePic from '../views/HomePic.vue'
+
 // 新闻部分
 import NewEdit from '../views/NewEdit'
 import NewList from '../views/NewList'
@@ -42,8 +45,11 @@ const routes = [
   {
     path: '/',
     name: 'main',
+    redirect:'/home',
     component: Main,
     children: [
+      { path: '/home', component: HomePic },
+
       { path: '/news/create', component: NewEdit },
       { path: '/news/edit/:id', component: NewEdit, props: true },
       { path: '/news/list', component: NewList },
