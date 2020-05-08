@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/video/video",
+    "pages/strategy/strategy",
+    "pages/match/match"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "穿越火线·枪战王者",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color":"#fff",
+    "selectedColor": "#ff5777",
+    "backgroundColor":"#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/tabbar/home.png",
+        "selectedIconPath": "/assets/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/assets/tabbar/video.png",
+        "selectedIconPath": "/assets/tabbar/video_active.png"
+      },
+      {
+        "pagePath": "pages/strategy/strategy",
+        "text": "攻略",
+        "iconPath": "/assets/tabbar/strategy.png",
+        "selectedIconPath": "/assets/tabbar/strategy_active.png"
+      },
+      {
+        "pagePath": "pages/match/match",
+        "text": "赛事",
+        "iconPath": "/assets/tabbar/match.png",
+        "selectedIconPath": "/assets/tabbar/match_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

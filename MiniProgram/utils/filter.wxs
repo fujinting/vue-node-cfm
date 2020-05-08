@@ -1,0 +1,30 @@
+//局部组件过滤器
+var ellipsis = function (value){
+  //实现文字只显示8个字符
+  if (value.length > 15) {
+    return value.slice(0, 15) + '...'
+  } else {
+    return value
+  }
+}
+
+// 时间格式化
+var dateDay=function(value){
+  // 实现只显示 MM/DD格式
+ 
+  return value.slice(5)
+}
+
+// 时间格式化2
+var dateYearDay=function(value){
+  return value.substring(0,10)
+}
+
+module.exports = {
+  ellipsis: ellipsis,
+  dateDay:dateDay,
+  dateYearDay:dateYearDay
+  
+  
+}
+

@@ -1,0 +1,117 @@
+<!-- 轮播图 -->
+<view class="main">
+
+
+<swiper class='swiper' circular autoplay interval='4000' duration='300' indicator-dots indicator-active-color='#ff5777'>
+	<block wx:for="{{banners}}" wx:key="{{index}}">
+		<swiper-item class="swiper-item">
+			<navigator url="{{item.url}}">
+				<image src="{{item.image}}" mode="widthFix" />
+			</navigator>
+		</swiper-item>
+	</block>
+</swiper>
+<!-- 首页分类 -->
+<view class="category">
+    <view class="category-item" wx:for="{{categories}}" wx:key="{{index}}">
+						<image src="{{item.img}}"></image>
+       			 <text>{{item.text}}</text>		
+    </view>
+</view>
+
+<!-- 热点新闻 -->
+<view class="news">
+	<view class="title">
+			<view class="line">|</view>
+			<view class="small-title">热点新闻</view>
+	</view>
+
+	<view class="news_list"> 
+		<block wx:for="{{news}}" wx:key="{{index}}">
+				<!-- 引入过滤器 -->
+				<wxs src="../../utils/filter.wxs" module="filter" />
+				<!--使用过滤器-->
+				<navigator url="https://www.baidu.com">
+				<view class="news-list_item">
+					<view class="a">{{item.categories}} | {{filter.ellipsis(item.title)}}</view>	
+						  <view class="date"> {{filter.dateDay(item.date)}}</view>
+				</view>
+			
+				</navigator>
+		</block>
+	</view>
+
+</view>
+
+<!-- 焦点视频 -->
+<view class="video">
+		<view class="title">
+				<view class="line">|</view>
+				<view class="small-title">焦点视频</view>
+		</view>
+
+		<view class="video_list">
+				
+					<block wx:for="{{videos}}" wx:key='index'>
+						<view class="video_list_item">
+								<video class="a" poster="{{item.icon}}" src="{{item.link}}" controls enable-auto-rotation >
+								</video>
+								<view class="b">{{item.title}}</view>
+								<view class="c">发布时间：{{filter.dateYearDay(item.date)}}</view>
+
+							</view>
+					</block>
+			
+		</view>
+
+
+</view>
+
+<!-- 精品攻略 -->
+<view class="strategy">
+	<view class="title">
+				<view class="line">|</view>
+				<view class="small-title">精品攻略</view>
+	</view>
+	<view class="strategy_list">
+				<view class="strategy_list_item" wx:for="{{strategies}}" wx:key="index">
+				<navigator class="angry" url="...">
+						<view class="a">
+									<view class="b">{{item.title}}</view>
+									<view class="c">发布时间：{{filter.dateYearDay(item.date)}}</view>		
+							</view>
+							<image src="{{item.icon}}"></image>
+				</navigator>
+				 
+				</view>
+	</view>
+
+</view>
+
+<!-- 火线大本营 -->
+<view class="fire">
+	<view class="title">
+			<view class="line">|</view>
+			<view class="small-title">火线大本营</view>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
