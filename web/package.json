@@ -11,7 +11,7 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "dayjs": "^1.8.24",
-    "swiper": "^5.3.6",
+    "swiper": "^6.5.1",
     "timeago.js": "^4.0.2",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.1.0",
